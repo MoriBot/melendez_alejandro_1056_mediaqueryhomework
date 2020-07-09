@@ -1,0 +1,70 @@
+/*Mobile FIrst Rules*/
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	margin: 0 auto;
+	background-color: #efefef;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 1140px;
+}
+
+.box {
+	color: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	margin: 10px;
+	width: 640px;
+	height: 400px;
+	font-size: 1em;
+}
+
+.box1 {
+	background-color: pink;
+}
+
+.box2 {
+	background-color: red;
+}
+
+.box3 {
+	background-color: grey;
+}
+
+.box4 {
+	background-color: brown;
+}
+
+.box3 , .box4 {
+	display: none;
+}
+
+/*desktop rules when page reaches 641px*/
+
+@media screen and (min-width: 641px) {
+	.box3 , .box4 {
+		display: block;
+	}
+
+	.box1 {
+		background-color: blue;
+	}
+
+	.box2 {
+		background-color: purple;
+	}
+
+	.container {
+		flex-wrap: nowrap;
+	}
+
+	.box {
+		color: #fefefe;
+		flex-grow: 1;
+	}
+}
